@@ -1,0 +1,142 @@
+
+.outter-container{
+    display: grid;
+    grid-template-columns: 6rem 2.5fr 6fr 6rem;
+    margin-bottom: 50rem;
+}
+
+.rightSection{
+    background-color: rgb(253, 253, 253);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 8rem;
+}
+
+
+.playerContainer{
+    margin-top: 3rem;
+    width: 350px;
+    height: 350px;
+}
+
+.image{
+    width: 100%;
+    background-color: rgb(241, 250, 193);
+    border-radius: 15px;
+}
+
+.leftSection{
+    grid-column: 2/3;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.rightSection h3{
+    margin-top: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:xx-large;
+}
+
+.rightSection .musicContainer{
+    margin-top: 1rem;
+}
+
+.rightSection .musicContainer ul li{
+    width: 35rem;
+    border-radius: 10px;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    margin-top: 1.5rem;
+    background-color: aliceblue;
+    /* margin-bottom: 3rem; */
+}
+
+.rightSection .musicContainer ul li{
+    background-color: rgb(214, 226, 226);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.25s ease-in-out;
+}
+
+.rightSection .musicContainer ul:last-child{
+    margin-bottom: 2.8rem;
+}
+
+.coverImg{
+    width: 30px;
+    height: 30px;
+}
+
+.coverImg img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.rightSection .musicContainer ul li:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    background-color:  rgb(230, 237, 243);;
+}
+
+::selection{
+    opacity: 0;
+}
+
+
+@media screen and (max-width:1400px) {
+    .outter-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .leftSection{
+       display: flex;
+       justify-content: center;
+    }
+    .rightSection{
+        margin: 1rem 2rem;
+        margin-bottom: 8rem;
+        background-color: rgb(255, 255, 255);
+
+    }
+    .rightSection .musicContainer ul li{
+        width: 30rem;
+        border-radius: 10px;
+        padding: 0.5rem 0.5rem;
+        list-style: none;
+        margin-top: 1.5rem;
+        background-color: aliceblue;
+        transition: 0.25s ease-in-out;
+    }
+}
+
+@media screen and (max-width:555px) {
+    .outter-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .leftSection{
+       display: flex;
+       justify-content: center;
+    }
+    .rightSection{
+        margin: 1rem 1rem;
+        margin-bottom: 8rem;
+        background-color: rgb(255, 255, 255);
+    }
+    .rightSection .musicContainer ul li{
+        max-width: 20rem;
+        border-radius: 10px;
+        padding: 0.5rem 0.5rem;
+        list-style: none;
+        margin-top: 1.5rem;
+        background-color: aliceblue;
+    }
+}
